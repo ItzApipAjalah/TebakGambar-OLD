@@ -1,5 +1,5 @@
 <p align="center"><img src="https://github.com/ItzApipAjalah/TebakGambar/blob/master/app/src/main/res/drawable/logo2.png" alt="logo"></p>
-<h1 align="center">TEBAK GAMBAR BY ASSESTMENT 6</h1>
+<h1 align="center">TEBAK GAMBAR BY ASSESMENT 6</h1>
 
 ## Who made this
 * Developer [Afif](https://www.instagram.com/apip01____/)
