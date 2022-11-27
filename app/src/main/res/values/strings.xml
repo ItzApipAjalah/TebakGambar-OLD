@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Tebak Gambar</string>
+    <string name="tebak">Tebak</string>
+    <string name="game">GAME</string>
+    <string name="title">Really Exit?</string>
+    <string name="massege">Are you sure you want to exit?</string>
+    <string name="apip"><a href="https://instagram.com/apip01____">@apip01____</a></string>
+    <string name="insa"><a href="https://instagram.com/aninsa22">@aninsa22</a></string>
+    <string name="cinta"><a href="https://instagram.com/cintazera77">@cintazera77</a></string>
+    <string name="vivi"><a href="https://instagram.com/davinadaresyaf">@davinadaresyaf</a></string>
+    <string name="viko"><a href="https://instagram.com/vincentiusvick">@vincentiusvick</a></string>
+</resources>

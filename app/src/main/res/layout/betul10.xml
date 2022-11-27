@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="350dp"
+    android:layout_height="350dp"
+    android:layout_gravity="center"
+    android:background="@drawable/popup">
+
+    <ImageView
+        android:id="@+id/logobetul"
+        android:layout_width="120dp"
+        android:layout_height="200dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="-30dp"
+        android:src="@drawable/checklist" />
+
+    <TextView
+        android:id="@+id/judul"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="-20dp"
+        android:fontFamily="@font/alfa_slab_one"
+        android:text="JAWABAN KAMU BETUL"
+        android:textColor="@color/black"
+        android:textSize="23sp" />
+
+    <TextView
+        android:id="@+id/penjelasan"
+        android:layout_width="300dp"
+        android:layout_height="200dp"
+        android:layout_gravity="center"
+        android:layout_marginLeft="5dp"
+        android:fontFamily="@font/arbutus"
+        android:text="Sunan Kudus adalah ulama yang dimasukkan dalam daftar Wali Songo. Nama lahirnya adalah Ja'far Shodiq. Ia adalah putra Sayyid Utsman Haji dengan Siti Syari'ah"
+        android:textColor="@color/black"
+        android:textSize="12dp" />
+
+    <Button
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-100dp"
+        android:layout_marginLeft="275dp"
+        android:background="@drawable/next"
+        android:id="@+id/next"
+        />
+
+    <Button
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="-45dp"
+        android:layout_marginLeft="25dp"
+        android:background="@drawable/close"
+        android:id="@+id/close"
+        />
+
+</LinearLayout>

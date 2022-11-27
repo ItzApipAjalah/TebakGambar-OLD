@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/gradient_all"
+    android:id="@+id/bgl3"
+    tools:context=".level3">
+
+    <TextView
+        android:layout_width="350dp"
+        android:layout_height="250dp"
+        android:id="@+id/question"
+        android:layout_gravity="center"
+        android:layout_marginTop="70dp"
+        android:background="@drawable/lepeling"
+        android:elevation="100dp" />
+
+    <ImageButton
+        android:id="@+id/bantuan3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/hint"
+        android:background="@drawable/hint"
+        android:layout_marginTop="-320dp"
+        android:layout_marginLeft="330dp"
+        />
+
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="151dp"
+        android:src="@drawable/daging"
+        android:elevation="150dp"
+        android:layout_marginLeft="150dp"
+        android:layout_marginTop="70dp"
+        />
+
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="+ AN"
+        android:fontFamily="@font/jura_semibold"
+        android:textColor="@color/black"
+        android:textSize="30dp"
+        android:layout_marginLeft="260dp"
+        android:elevation="250dp"
+        android:layout_marginTop="-45dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="PER +"
+        android:fontFamily="@font/jura_semibold"
+        android:textColor="@color/black"
+        android:textSize="30dp"
+        android:layout_marginLeft="60dp"
+        android:elevation="250dp"
+        android:layout_marginTop="-39dp"
+        />
+
+    <EditText
+        android:hint="Masukan Jawaban"
+        android:id="@+id/kata"
+        android:textColor="@color/black"
+        android:background="@drawable/edittext"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dp"
+        android:layout_gravity="center"
+        android:ems="10" />
+
+    <Button
+        android:background="@drawable/pitch"
+        android:layout_gravity="center"
+        android:id="@+id/submit"
+        android:layout_marginTop="20dp"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:text="CEK" />
+
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/icoret"
+        android:elevation="150dp"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="-350dp"
+        />
+
+
+</LinearLayout>

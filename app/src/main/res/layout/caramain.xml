@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_all"
+    android:id="@+id/bg"
+    tools:context=".caramain">
+
+    <TextView
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:background="@drawable/button"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        />
+
+    <TextView
+        android:textSize="20dp"
+        android:textColor="@color/black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="-190dp"
+        android:layout_marginTop="33dp"
+        android:fontFamily="@font/inter_black"
+        android:textStyle="bold"
+        android:text="CARA BERMAIN?"
+        />
+
+    <TextView
+        android:layout_width="370dp"
+        android:layout_height="500dp"
+        android:background="@drawable/caramain"
+        android:layout_marginTop="70dp"
+        android:layout_marginLeft="-180dp"
+        />
+    <TextView
+        android:layout_width="300dp"
+        android:textSize="14dp"
+        android:textColor="@color/black"
+        android:layout_height="wrap_content"
+        android:text="pertama,identifikasi dan amati dulu gambarnya"
+        android:layout_marginLeft="-340dp"
+        android:fontFamily="@font/inter_black"
+        android:layout_marginTop="100dp"
+        />
+
+    <TextView
+        android:textSize="14dp"
+        android:textColor="@color/black"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="-300dp"
+        android:fontFamily="@font/inter_black"
+        android:layout_marginTop="140dp"
+        android:text="Berikutnya,perhatikan keterangan di sekitar apabila ada huruf atau suku kata tambahan. Maka rangkaila kata tersebut dengan gambar yang berkaitan."
+        />
+
+    <TextView
+        android:textSize="14dp"
+        android:textColor="@color/black"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="-300dp"
+        android:fontFamily="@font/inter_black"
+        android:layout_marginTop="215dp"
+        android:text="bila ada pergantian huruf atau suku kata maka gantilah sehingga menjadi kata baru."
+        />
+
+    <TextView
+        android:textSize="14dp"
+        android:textColor="@color/black"
+        android:layout_width="310dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="-300dp"
+        android:fontFamily="@font/inter_black"
+        android:layout_marginTop="265dp"
+        android:text="setelah semua kata terbentuk.maka itulah jawaban dari tebak gambar yang di maksud."
+        />
+
+    <TextView
+        android:textSize="14dp"
+        android:textColor="@color/black"
+        android:layout_width="310dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="-313dp"
+        android:fontFamily="@font/inter_black"
+        android:layout_marginTop="320dp"
+        android:text="Contoh:"
+        />
+
+    <TextView
+        android:textSize="14dp"
+        android:textColor="@color/black"
+        android:layout_width="310dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="-313dp"
+        android:fontFamily="@font/inter_black"
+        android:layout_marginTop="485dp"
+        android:text="Ada gambar (sun) , dan tulisan (an), dan kudus.maka semua dirangkai menjadi:"
+        />
+
+    <TextView
+        android:textSize="14dp"
+        android:textColor="@color/black"
+        android:layout_width="310dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="-310dp"
+        android:fontFamily="@font/inter_black"
+        android:layout_marginTop="520dp"
+        android:text="Sun dan an dan kudus:sunan kudusnah,gampang kan!"
+        />
+
+    <TextView
+        android:textSize="14dp"
+        android:textColor="@color/black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="-325dp"
+        android:fontFamily="@font/inter_black"
+        android:layout_marginTop="100dp"
+        android:text="•"
+        />
+
+    <TextView
+        android:textSize="14dp"
+        android:textColor="@color/black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="-5dp"
+        android:fontFamily="@font/inter_black"
+        android:layout_marginTop="140dp"
+        android:text="•"
+        />
+
+    <TextView
+        android:textSize="14dp"
+        android:textColor="@color/black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="-5dp"
+        android:fontFamily="@font/inter_black"
+        android:layout_marginTop="215dp"
+        android:text="•"
+        />
+
+    <TextView
+        android:textSize="14dp"
+        android:textColor="@color/black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="-5dp"
+        android:fontFamily="@font/inter_black"
+        android:layout_marginTop="265dp"
+        android:text="•"
+        />
+
+    <TextView
+        android:textSize="14dp"
+        android:textColor="@color/black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="-5dp"
+        android:fontFamily="@font/inter_black"
+        android:layout_marginTop="320dp"
+        android:text="•"
+        />
+
+    <TextView
+        android:textSize="14dp"
+        android:textColor="@color/black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="-5dp"
+        android:fontFamily="@font/inter_black"
+        android:layout_marginTop="485dp"
+        android:text="•"
+        />
+    <TextView
+        android:textSize="14dp"
+        android:textColor="@color/black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="-5dp"
+        android:fontFamily="@font/inter_black"
+        android:layout_marginTop="520dp"
+        android:text="•"
+        />
+    <ImageView
+        android:layout_width="250dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="285dp"
+        android:layout_marginLeft="45dp"
+        android:src="@drawable/sunankudus"
+        />
+
+    <TextView
+        android:layout_width="180dp"
+        android:layout_height="40dp"
+        android:background="@drawable/button"
+        android:layout_marginLeft="-315dp"
+        android:layout_marginTop="585dp"
+        />
+
+    <TextView
+        android:textSize="20dp"
+        android:textColor="@color/black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="-165dp"
+        android:layout_marginTop="598dp"
+        android:fontFamily="@font/inter_black"
+        android:textStyle="bold"
+        android:text="PERATURAN!"
+        />
+
+    <TextView
+        android:layout_width="370dp"
+        android:layout_height="80dp"
+        android:background="@drawable/caramain"
+        android:layout_marginTop="635dp"
+        android:layout_marginLeft="-147dp"
+        />
+
+    <TextView
+        android:textSize="14dp"
+        android:textColor="@color/black"
+        android:layout_width="310dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="-340dp"
+        android:fontFamily="@font/inter_black"
+        android:layout_marginTop="650dp"
+        android:text="Jawab pertanyaaan dengan jujur"
+        />
+
+    <TextView
+        android:textSize="14dp"
+        android:textColor="@color/black"
+        android:layout_width="310dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="-310dp"
+        android:fontFamily="@font/inter_black"
+        android:layout_marginTop="675dp"
+        android:text="JANGAN BUKA GOOGLE!!"
+        />
+
+    <TextView
+        android:textSize="14dp"
+        android:textColor="@color/black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="-325dp"
+        android:fontFamily="@font/inter_black"
+        android:layout_marginTop="650dp"
+        android:text="•"
+        />
+
+    <TextView
+        android:textSize="14dp"
+        android:textColor="@color/black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="-5dp"
+        android:fontFamily="@font/inter_black"
+        android:layout_marginTop="675dp"
+        android:text="•" />
+
+    <ImageButton
+        android:id="@+id/rewind"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:src="@drawable/rewind"
+        android:background="@drawable/nothing"
+        android:layout_marginTop="725dp"
+        android:layout_marginLeft="-20dp"
+        />
+</LinearLayout>
