@@ -58,4 +58,25 @@
         android:layout_height="50dp"
         android:text="CEK" />
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="LEVEL 18"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:fontFamily="@font/inter_black"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="-440dp"
+        />
+
+    <Button
+        android:id="@+id/back"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@drawable/back"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="680dp"
+        />
+
 </LinearLayout>
