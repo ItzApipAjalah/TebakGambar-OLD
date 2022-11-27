@@ -22,4 +22,4 @@
 
 ## What's this written in?
 * [Java](https://www.java.com/en/)
-* For Deisgn [Figma](https://www.figma.com/file/UwxeaIFDArrzAB8NaymLcG/Untitled?node-id=0%3A1&t=C7FVovcnZc3dMMUL-1)
+* For Design [Figma](https://www.figma.com/file/UwxeaIFDArrzAB8NaymLcG/Untitled?node-id=0%3A1&t=C7FVovcnZc3dMMUL-1)
