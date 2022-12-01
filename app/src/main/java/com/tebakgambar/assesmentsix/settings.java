@@ -39,6 +39,7 @@ public class settings extends AppCompatActivity {
             public void onClick(View view) {
                 Intent intentLoadNewActivity = new Intent(settings.this, MainActivity.class);
                 MyMediaPlayer.getMediaPlayerInstance().stopAudioFile();
+                intentLoadNewActivity.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
                 startActivity(intentLoadNewActivity);
                 overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left);
             }
@@ -49,6 +50,7 @@ public class settings extends AppCompatActivity {
             public void onClick(View view) {
                 Intent intentLoadNewActivity = new Intent(settings.this, mute.class);
                 MyMediaPlayer.getMediaPlayerInstance().stopAudioFile();
+                intentLoadNewActivity.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
                 startActivity(intentLoadNewActivity);
                 overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left);
             }

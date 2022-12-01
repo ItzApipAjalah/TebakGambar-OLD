@@ -1,12 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/gradient_all"
-    android:id="@+id/bg"
     tools:context=".caramain">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/gradient_all"
+        android:id="@+id/bg" >
 
     <TextView
         android:layout_width="200dp"
@@ -29,7 +33,7 @@
         />
 
     <TextView
-        android:layout_width="370dp"
+        android:layout_width="340dp"
         android:layout_height="500dp"
         android:background="@drawable/caramain"
         android:layout_marginTop="70dp"
@@ -41,7 +45,7 @@
         android:textColor="@color/black"
         android:layout_height="wrap_content"
         android:text="pertama,identifikasi dan amati dulu gambarnya"
-        android:layout_marginLeft="-340dp"
+        android:layout_marginLeft="-315dp"
         android:fontFamily="@font/inter_black"
         android:layout_marginTop="100dp"
         />
@@ -109,7 +113,7 @@
         android:layout_marginLeft="-310dp"
         android:fontFamily="@font/inter_black"
         android:layout_marginTop="520dp"
-        android:text="Sun dan an dan kudus:sunan kudusnah,gampang kan!"
+        android:text="Sun dan an dan kudus:sunan kudusnah,gampang kan! (tanpa Spasi)"
         />
 
     <TextView
@@ -216,8 +220,8 @@
         />
 
     <TextView
-        android:layout_width="370dp"
-        android:layout_height="80dp"
+        android:layout_width="345dp"
+        android:layout_height="100dp"
         android:background="@drawable/caramain"
         android:layout_marginTop="635dp"
         android:layout_marginLeft="-147dp"
@@ -228,7 +232,7 @@
         android:textColor="@color/black"
         android:layout_width="310dp"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="-340dp"
+        android:layout_marginLeft="-315dp"
         android:fontFamily="@font/inter_black"
         android:layout_marginTop="650dp"
         android:text="Jawab pertanyaaan dengan jujur"
@@ -242,8 +246,19 @@
         android:layout_marginLeft="-310dp"
         android:fontFamily="@font/inter_black"
         android:layout_marginTop="675dp"
-        android:text="JANGAN BUKA GOOGLE!!"
+        android:text="Semua Pertanyaan Di jawab tanpa spasi"
         />
+
+        <TextView
+            android:textSize="14dp"
+            android:textColor="@color/black"
+            android:layout_width="310dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="-310dp"
+            android:fontFamily="@font/inter_black"
+            android:layout_marginTop="700dp"
+            android:text="JANGAN BUKA GOOGLE!!"
+            />
 
     <TextView
         android:textSize="14dp"
@@ -266,13 +281,24 @@
         android:layout_marginTop="675dp"
         android:text="•" />
 
+        <TextView
+            android:textSize="14dp"
+            android:textColor="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="-5dp"
+            android:fontFamily="@font/inter_black"
+            android:layout_marginTop="700dp"
+            android:text="•" />
+
     <ImageButton
         android:id="@+id/rewind"
         android:layout_width="60dp"
         android:layout_height="60dp"
         android:src="@drawable/rewind"
         android:background="@drawable/nothing"
-        android:layout_marginTop="725dp"
+        android:layout_marginTop="745dp"
         android:layout_marginLeft="-20dp"
         />
-</LinearLayout>
+    </LinearLayout>
+</ScrollView>

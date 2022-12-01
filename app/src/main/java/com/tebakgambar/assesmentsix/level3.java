@@ -51,6 +51,41 @@ public class level3 extends AppCompatActivity {
         final MediaPlayer mp = MediaPlayer.create(this, R.raw.pop);
         final MediaPlayer wrong = MediaPlayer.create(this, R.raw.wrong);
         final MediaPlayer correct = MediaPlayer.create(this, R.raw.correct);
+
+        textView = findViewById(R.id.timer);
+        CountDownTimer timer = new CountDownTimer(40000, 1000) {
+            @Override
+            public void onTick(long millisUntilFinished) {
+                textView.setText("" + millisUntilFinished / 1000);
+            }
+
+            @Override
+            public void onFinish() {
+                textView.setVisibility(View.GONE);
+                Toast.makeText(getApplicationContext()
+                        ,"Waktu Kamu Sudah Habis",Toast.LENGTH_LONG).show();
+                Intent intentLoadNewActivity = new Intent(level3.this, MainActivity.class);
+                intentLoadNewActivity.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
+                MyMediaPlayer.getMediaPlayerInstance().stopAudioFile();
+                overridePendingTransition(R.anim.slide_in_left, R.anim.slide_out_right);
+                startActivity(intentLoadNewActivity);
+            }
+        }.start();
+
+        button = (Button) findViewById(R.id.back);
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                mp.seekTo(0);
+                mp.start();
+                timer.cancel();
+                Intent intentLoadNewActivity = new Intent(level3.this, MainActivity.class);
+                intentLoadNewActivity.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
+                MyMediaPlayer.getMediaPlayerInstance().stopAudioFile();
+                startActivity(intentLoadNewActivity);
+                overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left);
+            }
+        });
         imagebtn = (ImageButton) findViewById(R.id.bantuan3);
         mDialog = new Dialog(this);
 
@@ -78,6 +113,7 @@ public class level3 extends AppCompatActivity {
                     dialog.setContentView(R.layout.betul3);
                     dialog.setCancelable(false);
                     dialog.setCanceledOnTouchOutside(false);
+                    timer.cancel();
 
                     ImageView imageView = dialog.findViewById(R.id.logobetul);
                     TextView textView = dialog.findViewById(R.id.judul);
@@ -97,7 +133,9 @@ public class level3 extends AppCompatActivity {
                     dialogButton.setOnClickListener(new View.OnClickListener() {
                         @Override
                         public void onClick(View view) {
-                            Intent intentLoadNewActivity = new Intent(level3.this, MainActivity2.class);
+                            Intent intentLoadNewActivity = new Intent(level3.this, MainActivity.class);
+                            intentLoadNewActivity.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
+                            MyMediaPlayer.getMediaPlayerInstance().stopAudioFile();
                             startActivity(intentLoadNewActivity);
                             overridePendingTransition(R.anim.slide_in_left, R.anim.slide_out_right);
                         }
@@ -112,5 +150,9 @@ public class level3 extends AppCompatActivity {
                 }
             }
         });
+    }
+    @Override
+    public void onBackPressed() {
+        return;
     }
 }

@@ -60,7 +60,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 mp.seekTo(0);
                 mp.start();
-                Intent intentLoadNewActivity = new Intent(MainActivity.this, MainActivity2.class);
+                Intent intentLoadNewActivity = new Intent(MainActivity.this, level1.class);
                 intentLoadNewActivity.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
                 startActivity(intentLoadNewActivity);
                 overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left);

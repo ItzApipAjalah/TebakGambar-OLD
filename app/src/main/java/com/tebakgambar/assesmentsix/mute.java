@@ -52,20 +52,37 @@ public class mute extends AppCompatActivity {
 
 
 
-        imagebtn = (ImageButton) findViewById(R.id.imagebtn);
-        imagebtn.setOnClickListener(new View.OnClickListener() {
+        button = (Button) findViewById(R.id.start);
+        final MediaPlayer mp = MediaPlayer.create(this, R.raw.pop);
+        button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intentLoadNewActivity = new Intent(mute.this, MainActivity2.class);
+                mp.seekTo(0);
+                mp.start();
+                Intent intentLoadNewActivity = new Intent(mute.this, level1.class);
+                intentLoadNewActivity.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
                 startActivity(intentLoadNewActivity);
                 overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left);
             }
         });
-        imagebtn = findViewById(R.id.exit);
-        imagebtn.setOnClickListener(new View.OnClickListener() {
+        button = (Button) findViewById(R.id.caramain);
+        button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
+                mp.seekTo(0);
+                mp.start();
+                Intent intentLoadNewActivity = new Intent(mute.this, caramain.class);
+                intentLoadNewActivity.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
+                startActivity(intentLoadNewActivity);
+                overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left);
+            }
+        });
+        button = findViewById(R.id.exit);
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                mp.seekTo(0);
+                mp.start();
                 alertDialog = new AlertDialog.Builder(mute.this);
                 alertDialog.setIcon(R.drawable.ic_baseline_contact_support_24);
                 alertDialog.setTitle(R.string.title);
@@ -79,19 +96,9 @@ public class mute extends AppCompatActivity {
                     }
                 });
 
-                alertDialog.setNegativeButton("Tidak", new DialogInterface.OnClickListener() {
-                    @Override
-                    public void onClick(DialogInterface dialogInterface, int i) {
-                        Toast.makeText(mute.this, "Kamu Menekan Tombol Tidak", Toast.LENGTH_SHORT).show();
-                    }
-                });
+                alertDialog.setNegativeButton("Tidak", null);
 
-                alertDialog.setNeutralButton("Batal", new DialogInterface.OnClickListener() {
-                    @Override
-                    public void onClick(DialogInterface dialogInterface, int i) {
-                        Toast.makeText(mute.this, "Kamu Menekan Tombol Batal", Toast.LENGTH_SHORT).show();
-                    }
-                });
+                alertDialog.setNeutralButton("Batal", null);
 
                 AlertDialog tDialog = alertDialog.create();
                 tDialog.show();
@@ -104,6 +111,8 @@ public class mute extends AppCompatActivity {
         imagebtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                mp.seekTo(0);
+                mp.start();
                 mDialog.setContentView(R.layout.popup);
                 mDialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
                 mDialog.show();
@@ -115,6 +124,8 @@ public class mute extends AppCompatActivity {
         imagebtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                mp.seekTo(0);
+                mp.start();
                 mDialog.setContentView(R.layout.ig);
                 mDialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
 
@@ -124,12 +135,16 @@ public class mute extends AppCompatActivity {
             }
         });
 
-        imagebtn = (ImageButton) findViewById(R.id.settings);
-        imagebtn.setOnClickListener(new View.OnClickListener() {
+        button = (Button) findViewById(R.id.settings);
+        button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                mp.seekTo(0);
+                mp.start();
                 Intent intentLoadNewActivity = new Intent(mute.this, settings.class);
                 startActivity(intentLoadNewActivity);
+                intentLoadNewActivity.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+                intentLoadNewActivity.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
                 overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left);
             }
         });
@@ -138,5 +153,22 @@ public class mute extends AppCompatActivity {
     protected void onUserLeaveHint() {
         MyMediaPlayer.getMediaPlayerInstance().stopAudioFile();
         super.onUserLeaveHint();
+    }
+    @Override
+    public void onBackPressed() {
+        new AlertDialog.Builder(this)
+                .setIcon(R.drawable.ic_baseline_contact_support_24)
+                .setTitle("Really Exit?")
+                .setMessage("Are you sure you want to exit?")
+                .setNegativeButton("Tidak", null)
+                .setNeutralButton("Batal", null)
+                .setPositiveButton("Iya", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialogInterface, int i) {
+                        android.os.Process.killProcess(android.os.Process.myPid());
+                        finish();
+                    }
+                }).create().show();
+
     }
 }

@@ -68,6 +68,10 @@
     <EditText
         android:hint="Masukan Jawaban"
         android:id="@+id/kata"
+        android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890"
+        android:inputType="textFilter"
+        android:typeface="serif"
+        android:singleLine = "true"
         android:textColor="@color/black"
         android:background="@drawable/edittext"
         android:layout_width="250dp"
@@ -104,7 +108,63 @@
         android:layout_height="50dp"
         android:background="@drawable/back"
         android:layout_marginLeft="15dp"
-        android:layout_marginTop="685dp"
+        android:layout_marginTop="600dp"
+        />
+    <TextView
+        android:id="@+id/timer"
+        android:layout_width="28dp"
+        android:layout_height="35dp"
+        android:text=""
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:fontFamily="@font/inter_black"
+        android:layout_gravity="center"
+        android:layout_marginTop="-205dp"
         />
 
+    <TextView
+        android:layout_width="64dp"
+        android:layout_height="30dp"
+        android:text="TIMER"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:fontFamily="@font/inter_black"
+        android:layout_gravity="center"
+        />
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/timer"
+        android:layout_gravity="center"
+        />
+
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="150dp"
+        android:elevation="-10dp"
+        android:background="@drawable/caramain"
+        android:layout_gravity="center"
+        android:layout_marginTop="-125dp"
+        />
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="-110dp"
+        android:elevation="-20dp"
+        android:rotation="10"
+        android:src="@drawable/boneka" />
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginLeft="240dp"
+        android:layout_marginTop="-430dp"
+        android:elevation="0dp"
+        android:rotation="250"
+        android:src="@drawable/boneka" />
 </LinearLayout>
