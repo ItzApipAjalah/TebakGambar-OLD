@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_all"
+    android:launchMode="singleTask"
+    android:orientation="vertical"
+    android:id="@+id/thanks"
+    tools:context=".thanks">
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="520dp"
+        android:layout_height="352dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="-20dp"
+        android:elevation="10dp"
+        app:srcCompat="@drawable/logo2"
+        android:foregroundGravity="center" />
+
+    <TextView
+        android:layout_width="310dp"
+        android:layout_height="100dp"
+        android:background="@drawable/button"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp"
+        />
+
+    <TextView
+        android:textSize="25dp"
+        android:textColor="@color/black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="-70dp"
+        android:fontFamily="@font/inter_black"
+        android:textStyle="bold"
+        android:text="THANKS FOR PLAYING"
+        />
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginLeft="200dp"
+        android:layout_marginTop="30dp"
+        android:elevation="0dp"
+        android:rotation="-60"
+        android:src="@drawable/boneka" />
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginLeft="-20dp"
+        android:layout_marginTop="-205dp"
+        android:elevation="0dp"
+        android:rotation="60"
+        android:src="@drawable/boneka" />
+
+    <Button
+        android:id="@+id/blevel"
+        android:elevation="-1dp"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:background="@drawable/caramain"
+        android:layout_marginTop="-20dp"
+        android:layout_gravity="center"
+        android:fontFamily="@font/inter_black"
+        android:textStyle="bold"
+        android:text="BONUS LEVEL"
+        android:textColor="@color/black"
+        android:textSize="25dp"
+        />
+
+</LinearLayout>

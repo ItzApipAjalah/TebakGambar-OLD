@@ -22,23 +22,22 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
-public class level20 extends AppCompatActivity {
+public class bonuslevel extends AppCompatActivity {
 
     ImageButton imagebtn;
     Dialog mDialog;
     Button button;
     Context context;
     TextView textView;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         requestWindowFeature(Window.FEATURE_NO_TITLE);
         this.getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,WindowManager.LayoutParams.FLAG_FULLSCREEN);
         getSupportActionBar().hide();
-        setContentView(R.layout.level20);
+        setContentView(R.layout.bonuslevel);
 
-        LinearLayout linearLayout = findViewById(R.id.bgl20);
+        LinearLayout linearLayout = findViewById(R.id.bgl);
 
         AnimationDrawable animationDrawable = (AnimationDrawable) linearLayout.getBackground();
         animationDrawable.setEnterFadeDuration(2500);
@@ -48,9 +47,8 @@ public class level20 extends AppCompatActivity {
         final MediaPlayer mp = MediaPlayer.create(this, R.raw.pop);
         final MediaPlayer wrong = MediaPlayer.create(this, R.raw.wrong);
         final MediaPlayer correct = MediaPlayer.create(this, R.raw.correct);
-
         textView = findViewById(R.id.timer);
-        CountDownTimer timer = new CountDownTimer(40000, 1000) {
+        CountDownTimer timer = new CountDownTimer(120000, 1000) {
             @Override
             public void onTick(long millisUntilFinished) {
                 textView.setText("" + millisUntilFinished / 1000);
@@ -61,7 +59,7 @@ public class level20 extends AppCompatActivity {
                 textView.setVisibility(View.GONE);
                 Toast.makeText(getApplicationContext()
                         ,"Waktu Kamu Sudah Habis",Toast.LENGTH_LONG).show();
-                Intent intentLoadNewActivity = new Intent(level20.this, level19.class);
+                Intent intentLoadNewActivity = new Intent(bonuslevel.this, thanks.class);
                 intentLoadNewActivity.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
                 MyMediaPlayer.getMediaPlayerInstance().stopAudioFile();
                 overridePendingTransition(R.anim.slide_in_left, R.anim.slide_out_right);
@@ -76,15 +74,13 @@ public class level20 extends AppCompatActivity {
                 mp.seekTo(0);
                 mp.start();
                 timer.cancel();
-                Intent intentLoadNewActivity = new Intent(level20.this, MainActivity.class);
+                Intent intentLoadNewActivity = new Intent(bonuslevel.this, thanks.class);
                 intentLoadNewActivity.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
-                MyMediaPlayer.getMediaPlayerInstance().stopAudioFile();
                 startActivity(intentLoadNewActivity);
                 overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left);
             }
         });
-
-        imagebtn = (ImageButton) findViewById(R.id.bantuan20);
+        imagebtn = (ImageButton) findViewById(R.id.bantuan19);
         mDialog = new Dialog(this);
 
         imagebtn.setOnClickListener(new View.OnClickListener() {
@@ -92,7 +88,7 @@ public class level20 extends AppCompatActivity {
             public void onClick(View view) {
                 mp.seekTo(0);
                 mp.start();
-                mDialog.setContentView(R.layout.hint20);
+                mDialog.setContentView(R.layout.hintbonus);
                 mDialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
                 mDialog.show();
             }
@@ -103,27 +99,26 @@ public class level20 extends AppCompatActivity {
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if(editText.getText().toString().equalsIgnoreCase("marahsilu"))
+                if(editText.getText().toString().equalsIgnoreCase("tahun1297"))
                 {
                     correct.seekTo(0);
                     correct.start();
                     Dialog dialog = new Dialog(context);
-                    dialog.setContentView(R.layout.betul20);
+                    dialog.setContentView(R.layout.betulbonus);
                     dialog.setCancelable(false);
                     dialog.setCanceledOnTouchOutside(false);
-                    timer.cancel();
 
                     ImageView imageView = dialog.findViewById(R.id.logobetul);
                     TextView textView = dialog.findViewById(R.id.judul);
                     TextView textView1 = dialog.findViewById(R.id.penjelasan);
                     Button dialogButton = dialog.findViewById(R.id.close);
                     Button dialogButton1 = dialog.findViewById(R.id.next);
+                    timer.cancel();
 
                     dialogButton1.setOnClickListener(new View.OnClickListener() {
                         @Override
                         public void onClick(View view) {
-                            Intent intentLoadNewActivity = new Intent(level20.this, thanks.class);
-                            intentLoadNewActivity.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
+                            Intent intentLoadNewActivity = new Intent(bonuslevel.this, thanks.class);
                             startActivity(intentLoadNewActivity);
                             overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left);
                         }
@@ -132,8 +127,9 @@ public class level20 extends AppCompatActivity {
                     dialogButton.setOnClickListener(new View.OnClickListener() {
                         @Override
                         public void onClick(View view) {
-                            Intent intentLoadNewActivity = new Intent(level20.this, thanks.class);
+                            Intent intentLoadNewActivity = new Intent(bonuslevel.this, thanks.class);
                             intentLoadNewActivity.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
+                            MyMediaPlayer.getMediaPlayerInstance().stopAudioFile();
                             startActivity(intentLoadNewActivity);
                             overridePendingTransition(R.anim.slide_in_left, R.anim.slide_out_right);
                         }

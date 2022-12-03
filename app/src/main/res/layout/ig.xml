@@ -25,6 +25,8 @@
         android:fontFamily="@font/jura_semibold"
         />
     <TextView
+        android:autoLink="web"
+        android:linksClickable="true"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/apip"

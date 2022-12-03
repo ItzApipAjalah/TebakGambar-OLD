@@ -61,7 +61,7 @@ public class level16 extends AppCompatActivity {
                 textView.setVisibility(View.GONE);
                 Toast.makeText(getApplicationContext()
                         ,"Waktu Kamu Sudah Habis",Toast.LENGTH_LONG).show();
-                Intent intentLoadNewActivity = new Intent(level16.this, MainActivity.class);
+                Intent intentLoadNewActivity = new Intent(level16.this, level15.class);
                 intentLoadNewActivity.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
                 MyMediaPlayer.getMediaPlayerInstance().stopAudioFile();
                 overridePendingTransition(R.anim.slide_in_left, R.anim.slide_out_right);
