@@ -63,7 +63,6 @@ public class level13 extends AppCompatActivity {
                         ,"Waktu Kamu Sudah Habis",Toast.LENGTH_LONG).show();
                 Intent intentLoadNewActivity = new Intent(level13.this, level12.class);
                 intentLoadNewActivity.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
-                MyMediaPlayer.getMediaPlayerInstance().stopAudioFile();
                 overridePendingTransition(R.anim.slide_in_left, R.anim.slide_out_right);
                 startActivity(intentLoadNewActivity);
             }
