@@ -1,4 +1,4 @@
-<p align="center"><img src="https://github.com/ItzApipAjalah/TebakGambar/blob/master/app/src/main/res/drawable/logo2.png" alt="logo"></p>
+<p align="center"><img src="https://github.com/ItzApipAjalah/TebakGambar-OLD-/blob/master/app/src/main/res/drawable/logo2.png" alt="logo"></p>
 <h1 align="center">TEBAK GAMBAR BY ASSESMENT 6</h1>
 <p align="center">
 <a href="https://github.com/ItzApipAjalah"><img title="Author" src="https://img.shields.io/badge/AUTHOR-ItzApipAjalah-orange.svg?style=for-the-badge&logo=github"></a>
